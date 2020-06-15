@@ -1,9 +1,36 @@
 # Test file for graphics in python
+#
+#
+# Created by Niolena Stiles
+# 06/14/2020
 
-from PyQt5.QtWidgets import QApplication, QLabel
+################
+# IMPORTS
+################
+
+# for interfacing with the system
+import sys
+
+# for game-related support using pygame
+import pygame
+
+################
+# MAIN FUNCTION
+################
+
+def main():
+    
+    # define parameters for pygame application window
+    width = 640         # in pixels
+    height = 400        # in pixels
+    fps = 30            # as frames/second
+
+    # setup pygame
+    pygame.init()
+
+
+
+
 
 if __name__ == "__main__":
-    app = QApplication([])
-    label = QLabel('Hello Nocco.')
-    label.show()
-    app.exec_()
+    main()
